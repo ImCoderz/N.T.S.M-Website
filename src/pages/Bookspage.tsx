@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar/Navbar'
+import { Navbar } from '../components/commun/navbar'
 import Bookswip from '../components/Swipper/Bookswip/Bookswip'
 import { useAtom,useAtomValue } from 'jotai'
 import { searchAtom,allBooks} from '../store'
@@ -24,9 +24,9 @@ const Bookspage = () => {
           <Bookswip/>
         </div>
         {
-          books.map((book: {book:string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined })=>(
-            <h1>{book.title}</h1>
-          ))
+          // books.map((book: {book:string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined })=>(
+          //  // <h1>{book.title}</h1>
+          // ))
         }
     </div>
   )
