@@ -1,0 +1,9 @@
+@layer container {
+    /* @apply  flex justify-between items-center gap-10 p-3 */
+    ul{
+        @apply pl-12 flex justify-between items-center gap-10 p-3 
+    }
+    li{
+        @apply text-[15px] text-purple font-semibold hover:text-pinky cursor-pointer
+    }
+}
