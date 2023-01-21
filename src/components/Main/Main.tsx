@@ -14,14 +14,14 @@ const Main = () => {
             animate
             ?
             (
-                <div className='flex flex-col justify-center items-center min-h-[60vh] bg-slate-500'>
+                <div className='px-20 flex flex-col justify-center items-center min-h-[60vh] bg-slate-500'>
                     <p className='text'>Welcome to N.T.S.M</p>
                     <p className='text'>No To Abusing Social Media</p>
                 </div>
             )
             :
             (
-                <div className='flex justify-between  gap-6'>
+                <div className='px-20 flex justify-between  gap-6'>
                     <div className="contaiiner w-[60%]">
                         <div className='relative'>
                             <h1><span>No To<br/>Social Media</span></h1>

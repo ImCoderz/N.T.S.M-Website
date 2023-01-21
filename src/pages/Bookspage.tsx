@@ -18,7 +18,7 @@ const Bookspage = () => {
   
   
   return (
-    <div className='px-20 bg-[#B6B5C6] min-h-screen flex flex-col gap-12'>
+    <div className=' bg-[#B6B5C6] min-h-screen flex flex-col gap-12'>
         <Navbar/>
         <div className=''>
           <Bookswip/>
