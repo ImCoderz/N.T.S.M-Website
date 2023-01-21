@@ -1,7 +1,16 @@
-const fr = {
+const ang = {
     identity: {
         logoName: 'N.T.S.M',
         logoAlt: 'No To Social Media',
+        menu: {
+            homePage: 'Home',
+            aboutPage: 'About',
+            readPage: 'Read',
+            contactPage:'Contact US'
+        },
+        button: {
+            title : 'Sign in'
+        },
     },
     intro: {
         title: `Simplifiez la gestion de vos projets de fin d'étude avec notre application PFE de la Faculté Hassan 2 de Casablanca`,
@@ -13,4 +22,4 @@ const fr = {
     },
 }as const;
 
-export default fr;
+export default ang;

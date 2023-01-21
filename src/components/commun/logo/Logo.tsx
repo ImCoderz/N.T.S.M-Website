@@ -1,7 +1,7 @@
-import Langs from '../../../utils/index';
+import langs from '../../../init/index';
 import './logo.css';
 export const Logo = () => {
-    const identify=Langs.fr.identity;
+    const identify=langs.ang.identity;
     return (
      
            <div className="content">

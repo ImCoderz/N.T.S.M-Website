@@ -1,7 +1,7 @@
-import fr from './fr';
+import ang from './ang';
 
 const langs = {
-    fr
+    ang
 }
 
 export type TLangs = typeof langs;
