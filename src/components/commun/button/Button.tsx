@@ -1,12 +1,12 @@
 import './button.css'
-export const ButtonNormal =({props: string})=>{
+export const ButtonNormal =({props}:{props:string})=>{
     return(
       <>
-        <button className=''>{...props}</button>
+        <button className=''>{props}</button>
       </>
     )
 } 
-export const ButtonAttrative = ({props}) =>{
+export const ButtonAttrative = ({props}:{props:string}) =>{
     return(
       <div className='btn'>
           <a className='utilitie  tracking-[2px] text-[15px] border-2 border-[#6A82FB] px-[22px] py-[8px] rounded'>

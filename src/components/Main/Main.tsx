@@ -21,7 +21,7 @@ const Main = () => {
             )
             :
             (
-                <div className='flex justify-between  gap-6'>
+                <div className='flex justify-between  gap-6 px-20'>
                     <div className="contaiiner w-[60%]">
                         <div className='relative'>
                             <h1><span>No To<br/>Social Media</span></h1>

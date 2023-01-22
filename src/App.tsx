@@ -6,6 +6,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import Sportpage from './pages/Sportpage';
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/books" element={<Bookspage/>}/>
+          <Route path="/sport" element={<Sportpage/>}/>
         </Routes>
       </Router>
       

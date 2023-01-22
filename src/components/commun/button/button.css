@@ -1,6 +1,8 @@
 
 @layer btn{
-
+.utilitie{
+    @apply hidden md:flex
+}
 .utilitie:hover{
 @apply text-white bg-[#6A82FB] boxshadow
 }

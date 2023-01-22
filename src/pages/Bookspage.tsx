@@ -1,4 +1,4 @@
-import { Navbar } from '../components/commun/navbar'
+import { Navbar } from '../components/Navbar'
 import Bookswip from '../components/Swipper/Bookswip/Bookswip'
 import { useAtom,useAtomValue } from 'jotai'
 import { searchAtom,allBooks} from '../store'

@@ -1,18 +1,15 @@
 .Humburger{
-    background: none;
+    width: 33px;
+    height: 33px;
+    background: transparent;
     display:block;
-    position:relative;
-    z-index:1;
-    user-select:none;
-    appearance:none;
-    border:none;
-    outline:none;
+    z-index: 1000;
     cursor:pointer;
 }
-.Humburger span{
+.Humburger div{
+    border-radius: 20px;
     height:4px;
     width:33px;
     margin-bottom:5px;
-    position:relative;
-    background-color:black;
+    background-color: black;
 }
