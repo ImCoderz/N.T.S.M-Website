@@ -1,8 +1,9 @@
 import langs from '../../../init/index';
-export const Humburger =( ) =>{
+import './humburger.css'
+export const Humburger = () => {
     const menuItem=langs.ang.identity.menu
      return (
-        <div>
+        <div className="Humburger">
           <span></span>
           <span></span>
           <span></span>
