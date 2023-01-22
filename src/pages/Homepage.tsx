@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React , { useEffect, useState } from 'react'
 import A2 from '../components/Animation/Animation'
 import Main from '../components/Main/Main'
-import Navbar from '../components/Navbar/Navbar'
+import { Navbar } from '../components/commun/navbar'
 
 const Homepage = () => {
   useEffect(()=>{

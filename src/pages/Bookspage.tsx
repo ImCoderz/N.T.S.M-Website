@@ -1,4 +1,4 @@
-import Navbar from '../components/Navbar/Navbar'
+import { Navbar } from '../components/commun/navbar'
 import Bookswip from '../components/Swipper/Bookswip/Bookswip'
 import { useAtom,useAtomValue } from 'jotai'
 import { searchAtom,allBooks} from '../store'
@@ -18,15 +18,15 @@ const Bookspage = () => {
   
   
   return (
-    <div className='px-20 bg-[#B6B5C6] min-h-screen flex flex-col gap-12'>
+    <div className='px-20 bg-[#B6B5C6] min-h-screen flex absolute  flex-col gap-12'>
         <Navbar/>
         <div className=''>
           <Bookswip/>
         </div>
         {
-          books.map((book: {book:string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined })=>(
-            <h1>{book.title}</h1>
-          ))
+          // books.map((book: {book:string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined })=>(
+          //  // <h1>{book.title}</h1>
+          // ))
         }
     </div>
   )

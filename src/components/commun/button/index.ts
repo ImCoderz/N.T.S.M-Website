@@ -1,0 +1,1 @@
+export {ButtonAttrative as ButtonA} from './Button'
