@@ -9,4 +9,4 @@ const Bookslide = () => {
   )
 }
 
-export default Bookslide
+export default Bookslide;

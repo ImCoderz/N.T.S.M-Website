@@ -2,7 +2,6 @@
     width: 33px;
     height: 33px;
     background: transparent;
-    display:block;
     z-index: 1000;
     cursor:pointer;
 }

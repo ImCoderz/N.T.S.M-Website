@@ -3,31 +3,18 @@ import Bookswip from '../components/Swipper/Bookswip/Bookswip'
 import { useAtom,useAtomValue } from 'jotai'
 import { searchAtom,allBooks} from '../store'
 import { JSXElementConstructor, ReactElement, ReactFragment, ReactPortal, useEffect } from 'react'
-
+import Read from '../components/Read/Read'
 const Bookspage = () => {
-  const [search,setSearch]=useAtom(searchAtom)
-  setSearch('react')  
-  const books=useAtomValue(allBooks).docs
-  
-  // useEffect(() => {
-  //   fetch("http://openlibrary.org/search.json?q=react")
-  //   .then(res=>console.log(res.json()))
-  //   .catch(err=>console.log(err));
-  // },[])
   
   
   
   return (
-    <div className='px-20 bg-[#B6B5C6] min-h-screen flex absolute  flex-col gap-12'>
+    <div className='px-20 w-[100%] min-h-screen flex absolute  flex-col gap-12'>
         <Navbar/>
         <div className=''>
           <Bookswip/>
         </div>
-        {
-          // books.map((book: {book:string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined })=>(
-          //  // <h1>{book.title}</h1>
-          // ))
-        }
+        <Read/>
     </div>
   )
 }
