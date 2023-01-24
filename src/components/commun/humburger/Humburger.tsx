@@ -1,12 +1,10 @@
-import langs from '../../../init/index';
 import './humburger.css'
-export const Humburger = () => {
-    const menuItem=langs.ang.identity.menu
+export const Humburger = ({setMenu,menu}:{setMenu:React.Dispatch<React.SetStateAction<boolean>>,menu:boolean}) => {
      return (
-        <div className="Humburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div className="Humburger z-50 absolute top-5 right-5" onClick={()=>setMenu(!menu)}>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
      )
 
