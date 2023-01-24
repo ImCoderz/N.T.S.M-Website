@@ -9,7 +9,7 @@ export const ButtonNormal =({text}:{text:string})=>{
 export const ButtonAttrative = ({text}:{text:string}) =>{
     return(
       <div className='btn'>
-          <a className='utilitie  tracking-[2px] text-[15px] border-2 border-[#6A82FB] px-[22px] py-[8px] rounded'>
+          <a className='utilitie cursor-pointer  tracking-[2px] text-[15px] border-2 hover:text-black border-[#6A82FB] text-textcolor px-[22px] py-[8px] rounded'>
             {text}
           </a>
       </div>

@@ -13,15 +13,18 @@ const Main = () => {
         {
             animate
             ?
-            (
-                <div className='flex flex-col justify-center items-center min-h-[60vh] bg-slate-500'>
-                    <p className='text'>Welcome to N.T.S.M</p>
-                    <p className='text'>No To Abusing Social Media</p>
+            (  <div className='flex gap-6 justify-center items-center text-center flex-col min-h-[80vh] bg-slate-500'>
+                    <div className=''>
+                        <p className='text text-2xl font-bold'>Welcome to N.T.S.M</p>
+                    </div>
+                    <div className=''>
+                        <p className='text text-4xl font-bold transition-all duration-500 '>No To Social Media</p>
+                    </div>
                 </div>
             )
             :
             (
-                <div className='flex justify-between flex-col md:flex-row  gap-6 px-10 md:px-20'>
+                <div className='flex justify-between flex-col md:flex-row  gap-6 px-10 md:px-20 mt-14'>
                     <div className="contaiiner md:w-[60%]">
                         <div className='relative'>
                             <h1><span>No To<br/>Social Media</span></h1>

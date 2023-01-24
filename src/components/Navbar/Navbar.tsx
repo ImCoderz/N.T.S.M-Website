@@ -12,8 +12,8 @@ const Navbar = () => {
             <Logo/>
             <ul className='flex justify-between items-center gap-10 p-3 py-6'>
                 <li className='text-[15px] text-purple font-semibold hover:text-pinky cursor-pointer'><a href='/'>Home</a></li>
-                <li className='text-[15px] font-semibold text-purple hover:text-pinky cursor-pointer'><a>About</a></li>
                 <li className='text-[15px] font-semibold text-purple hover:text-pinky cursor-pointer'><a href='/books'>Read</a></li>
+                <li className='text-[15px] font-semibold text-purple hover:text-pinky cursor-pointer'><a href='/sport'>Train</a></li>
                 <li className='text-[15px] font-semibold text-purple hover:text-pinky cursor-pointer'><a>Contact Us</a></li>
             </ul>
             <ButtonA text={langs.ang.identity.button.title} />

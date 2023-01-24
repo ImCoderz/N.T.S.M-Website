@@ -15,7 +15,7 @@ const Homepage = () => {
   const [animate,setAnimate]=useState(true)
   return (
     <div>
-        <header className='bg-bgcolor min-h-screen flex flex-col gap-24'>
+        <header className='bg-bgcolor min-h-screen flex flex-col gap-10'>
             {
             animate
             ?(
