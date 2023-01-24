@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
-import { ButtonA } from '../commun/button'
+import { ButtonA, LoginButton, LogoutButton } from '../commun/button'
 import { Humburger } from '../commun/humburger'
 import { Logo } from '../commun/logo'
 import './navbar.css'
 import langs from '../../init'
+import { useAuth0 } from "@auth0/auth0-react";
+import Profile from '../Profile/Profile'
+
 const Navbar = () => {
     const [menu, setMenu] = useState(false)
+    const {isLoading,user} =useAuth0()
   return (
     <div className=''>
       <nav className='px-20 hidden md:flex justify-between items-center overflow-x-hidden'>
@@ -16,7 +20,14 @@ const Navbar = () => {
                 <li className='text-[15px] font-semibold text-purple hover:text-pinky cursor-pointer'><a href='/sport'>Train</a></li>
                 <li className='text-[15px] font-semibold text-purple hover:text-pinky cursor-pointer'><a>Contact Us</a></li>
             </ul>
-            <ButtonA text={langs.ang.identity.button.title} />
+            {(!isLoading && !user)&&(
+              <LoginButton/>
+              )
+            }
+             {(!isLoading && user)&&(
+              <Profile/>
+              )
+            }
       </nav>
       <nav className='md:hidden flex justify-between px-10 overflow-x-hidden'> 
           <Logo/>
@@ -25,7 +36,14 @@ const Navbar = () => {
                 <li className='text-[25px] font-semibold text-purple hover:bg-pinky cursor-pointer py-10 w-full pl-10'><a>About</a></li>
                 <li className='text-[25px] font-semibold text-purple hover:bg-pinky cursor-pointer py-10 w-full pl-10'><a href='/books'>Read</a></li>
                 <li className='text-[25px] font-semibold text-purple hover:bg-pinky cursor-pointer py-10 w-full pl-10'><a>Contact Us</a></li>
-                <ButtonA text={langs.ang.identity.button.title} />
+                {(!isLoading && !user)&&(
+                  <LoginButton/>
+                  )
+                }
+                {(!isLoading && user)&&(
+                  <LogoutButton/>
+                  )
+                }
             </ul>
           <Humburger setMenu={setMenu} menu={menu}/>
       </nav>

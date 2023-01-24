@@ -9,7 +9,8 @@ const ang = {
             contactPage:'Contact US'
         },
         button: {
-            title : 'Sign in'
+            login : 'Log in',
+            logout:'Log Out'
         },
     },
     intro: {
