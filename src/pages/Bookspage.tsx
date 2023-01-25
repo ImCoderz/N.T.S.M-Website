@@ -19,10 +19,9 @@ const Bookspage = () => {
   // },[])
   
   
-  const [cover, setcover] = useState()
 
   return (
-    <div className='px-20 bg-[#B6B5C6] min-h-screen flex flex-col gap-12'>
+    <div className='px-20 bg-[#B6B5C6] min-h-screen flex flex-col'>
         <Navbar/>
         <div className=''>
           <Bookswip/>

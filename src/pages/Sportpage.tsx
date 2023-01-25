@@ -15,28 +15,34 @@ const Sportpage = () => {
         <Parallax bgImage={tr2} blur={{ min: -15, max: 15 }} bgImageAlt={'fitWomen'} className=' object-cover w-screen  h-screen overflow-hidden' strength={600}>
             <header className='w-[100%] h-screen absolute'>
                 <Navbar/>
-                <div className='w-[95%] h-[100vh] flex-col flex justify-center items-end'>
-                    <h1 className='text-textcolor font-bold text-[60px]'>Train Your Body</h1>
-                    <p className='text-bgcolor font-semibold text-[20px]'>A Good Mind In a Healthy Body</p>
+                <div className='w-[95%] h-[100vh] animate-slideleft flex-col flex justify-center items-end'>
+                        <h1 className='text-textcolor font-bold text-[60px]'>Train Your Body</h1>
+                        <p className='text-bgcolor font-semibold text-[20px]'>A Good Mind In a Healthy Body</p>
                 </div>
             </header>
         </Parallax>
-        <div className='p-20 h-[40vh]'>
-            <h1 className='text-2xl font-bold text-black'>Test</h1>
-            <p className='text-sm font-semibold text-gray-200'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, veniam! Voluptatum, quo? Sed dicta pariatur minus veniam ipsam culpa sunt et numquam eligendi, a officiis quia! Excepturi suscipit soluta ut.</p>
-        </div>
-        <Parallax bgImage={tr4}  className='w-screen h-screen' strength={800}>
+        <AnimationOnScroll animateIn='animate-slideup'>
+             <div className='p-20 h-[40vh]'>
+                <h1 className='text-2xl font-bold text-black'>Test</h1>
+                <p className='text-sm font-semibold text-gray-200'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, veniam! Voluptatum, quo? Sed dicta pariatur minus veniam ipsam culpa sunt et numquam eligendi, a officiis quia! Excepturi suscipit soluta ut.</p>
+            </div>`
+        </AnimationOnScroll>
+        <Parallax bgImage={tr4}  className='w-screen  h-screen' strength={800}>
             <header className='w-screen h-screen absolute flex justify-center items-center'>
                 <div>
-                    <h1 className='text-[60px] font-bold text-pinky '>Relieve Your Stress</h1>
-                    <p className='text-bgcolor font-semibold text-[20px] text-center'>Sport Is Better Than Any Pill <br /> A Free Stress Reliever</p>
+                    <AnimationOnScroll animateIn='animate-slowfade' duration={1}>
+                        <h1 className='text-[60px] font-bold text-pinky '>Relieve Your Stress</h1>
+                        <p className='text-bgcolor font-semibold text-[20px] text-center'>Sport Is Better Than Any Pill <br /> A Free Stress Reliever</p>
+                    </AnimationOnScroll>
                 </div>
             </header>
         </Parallax>
-        <div className='p-20 h-[40vh]'>
-            <h1 className='text-2xl font-bold text-black'>Test</h1>
-            <p className='text-sm font-semibold text-gray-200'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, veniam! Voluptatum, quo? Sed dicta pariatur minus veniam ipsam culpa sunt et numquam eligendi, a officiis quia! Excepturi suscipit soluta ut.</p>
-        </div>
+        <AnimationOnScroll animateIn='animate-slideup'>
+             <div className='p-20 h-[40vh]'>
+                <h1 className='text-2xl font-bold text-black'>Test</h1>
+                <p className='text-sm font-semibold text-gray-200'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, veniam! Voluptatum, quo? Sed dicta pariatur minus veniam ipsam culpa sunt et numquam eligendi, a officiis quia! Excepturi suscipit soluta ut.</p>
+            </div>`
+        </AnimationOnScroll>
         <Parallax bgImage={gym1} className='w-screen h-screen' strength={600} >
             <header className='w-screen h-screen absolute flex justify-center items-center'>
                 <div>
@@ -50,7 +56,7 @@ const Sportpage = () => {
                     <div className=''>
                         <h1 className='text-4xl font-bold text-textcolor'>Animation</h1>
                     </div>
-                    <div className='flex justify-between items-center w-screen px-10 '>
+                    <div className='flex justify-between items-center anima w-screen px-10 '>
                         <AnimationOnScroll animateIn="animate__bounceIn"  duration={5} >
                             <div className='w-[400px] h-[400px] bg-bgcolor'>
 
