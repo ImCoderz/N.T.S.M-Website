@@ -19,7 +19,7 @@ const ReadRight = () => {
         modules={[FreeMode]}
         className='mySwiper'
         slidesPerView={3}
-        spaceBetween={30}
+        spaceBetween={5}
         >
           
             {
@@ -37,8 +37,9 @@ const ReadRight = () => {
             
         </Swiper>
         </div>
-        <h1 className='text-[30px] text-bold'>All Books</h1>
-     <div className="grid grid-cols-3 gap-4">
+         <div className='overflow-y-auto h-[30vh] relative pt-4'>
+        <h1 className='text-[30px] text-bold  '>All Books</h1>
+     <div className="grid grid-cols-3 gap-2 ">
      {
           books.map((book:typeof books[0])=>(
            <>
@@ -49,6 +50,7 @@ const ReadRight = () => {
            </>
           ))
             }
+     </div>
      </div>
       </div>
     )

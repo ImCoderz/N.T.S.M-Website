@@ -10,7 +10,7 @@ const ReadLeft = () => {
     const books=useAtomValue(allBooks).docs
     console.log(books)
   return (
-    <div className='bg-white w-screen'>
+    <div className='bg-white'>
         <h1>Authors</h1>
         <Swiper 
         freeMode={true}
@@ -21,7 +21,7 @@ const ReadLeft = () => {
         spaceBetween={30}
         >
           
-            {
+            {/* {
           books.map((book:typeof books[0])=>(
            <>
               {book.author_key &&(
@@ -32,7 +32,7 @@ const ReadLeft = () => {
               }
            </>
           ))
-            }
+            } */}
             
         </Swiper>    </div>
   )
