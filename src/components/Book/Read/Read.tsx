@@ -3,8 +3,10 @@ import { useAtom,useAtomValue } from 'jotai'
 import { searchAtom,allBooks, idAtom} from '../../../store'
 import Card from '../Card/Card'
 const Read = () => {
+    
     const books=useAtomValue(allBooks).docs
-
+    console.log(books);
+      
     return (
         <div>
             {

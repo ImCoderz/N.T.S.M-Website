@@ -1,0 +1,8 @@
+
+.adj{
+    transform:rotateX(40deg);
+    transform: translateZ(100);
+}
+.other{
+    transform:rotateX(50deg);
+}

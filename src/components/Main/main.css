@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 @import url('https://fonts.googleapis.com/css?family=Titan+One');
 
-
+.space{
+  background-image: url('/src/assets/network.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
 .text {
   border-right: solid 3px rgba(0,255,0,.75);
   white-space: nowrap;

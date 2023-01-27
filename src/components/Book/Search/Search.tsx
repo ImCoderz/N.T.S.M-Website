@@ -3,7 +3,7 @@ import { useAtom} from 'jotai'
 import { searchAtom } from '../../../store'
 const Search = () => {
     const [search,setSearch]=useAtom(searchAtom)
-    setSearch('react')
+    setSearch('romance')
     return (
         <div>Search</div>
     )

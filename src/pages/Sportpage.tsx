@@ -9,6 +9,8 @@ import tr4 from '../assets/tr4.jpg'
 import tr5 from '../assets/tr5.jpg'
 import ne from '../assets/new.jpg'
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import Text from '../components/Parallax/Text';
+import Sportswip from '../components/Swipper/Sportswip/Sportswip'
 const Sportpage = () => {
   return (
     <div className='bg-gray-500 overflow-hidden min-h-screen'>
@@ -21,12 +23,7 @@ const Sportpage = () => {
                 </div>
             </header>
         </Parallax>
-        <AnimationOnScroll animateIn='animate-slideup'>
-             <div className='p-20 h-[40vh]'>
-                <h1 className='text-2xl font-bold text-black'>Test</h1>
-                <p className='text-sm font-semibold text-gray-200'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, veniam! Voluptatum, quo? Sed dicta pariatur minus veniam ipsam culpa sunt et numquam eligendi, a officiis quia! Excepturi suscipit soluta ut.</p>
-            </div>`
-        </AnimationOnScroll>
+        <Text/>
         <Parallax bgImage={tr4}  className='w-screen  h-screen' strength={800}>
             <header className='w-screen h-screen absolute flex justify-center items-center'>
                 <div>
@@ -37,13 +34,8 @@ const Sportpage = () => {
                 </div>
             </header>
         </Parallax>
-        <AnimationOnScroll animateIn='animate-slideup'>
-             <div className='p-20 h-[40vh]'>
-                <h1 className='text-2xl font-bold text-black'>Test</h1>
-                <p className='text-sm font-semibold text-gray-200'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, veniam! Voluptatum, quo? Sed dicta pariatur minus veniam ipsam culpa sunt et numquam eligendi, a officiis quia! Excepturi suscipit soluta ut.</p>
-            </div>`
-        </AnimationOnScroll>
-        <Parallax bgImage={gym1} className='w-screen h-screen' strength={600} >
+        <Text/>
+        <Parallax blur={{ min: -15, max: 15 }} bgImage={gym1} className='w-screen h-screen' strength={600} >
             <header className='w-screen h-screen absolute flex justify-center items-center'>
                 <div>
                     <h1 className='text-[60px] font-bold text-greeny '>Be Positive</h1>
@@ -52,26 +44,12 @@ const Sportpage = () => {
             </header>
         </Parallax>
         <Parallax strength={300}>
-                <div className='h-screen w-screen flex flex-col justify-evenly items-center '>
+                <div className='h-screen w-screen flex flex-col justify-evenly items-center bg '>
                     <div className=''>
-                        <h1 className='text-4xl font-bold text-textcolor'>Animation</h1>
+                        <h1 className='text-4xl font-bold text-textcolor'>Sports:</h1>
                     </div>
-                    <div className='flex justify-between items-center anima w-screen px-10 '>
-                        <AnimationOnScroll animateIn="animate__bounceIn"  duration={5} >
-                            <div className='w-[400px] h-[400px] bg-bgcolor'>
-
-                            </div>
-                        </AnimationOnScroll>
-                        <AnimationOnScroll animateIn="animate__bounceIn" delay={1000} duration={5}>
-                            <div className='w-[300px] h-[300px] bg-bgcolor'>
-
-                            </div>
-                        </AnimationOnScroll>
-                        <AnimationOnScroll animateIn="animate__bounceIn" delay={2000} duration={5} >
-                            <div className='w-[200px] h-[200px] bg-bgcolor'>
-
-                            </div>
-                        </AnimationOnScroll>
+                    <div className='flex justify-between items-center anima w-screen '>
+                        <Sportswip/>
                     </div>
                 </div>
         </Parallax>

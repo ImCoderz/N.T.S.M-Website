@@ -1,7 +1,7 @@
 
 @layer btn{
 .utilitie{
-    @apply hidden md:flex transition-all duration-300 
+    @apply   transition-all duration-300 
 }
 .utilitie:hover{
 @apply  bg-[#6A82FB] boxshadow transition-all duration-300 

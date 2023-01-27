@@ -13,7 +13,7 @@ const Main = () => {
         {
             animate
             ?
-            (  <div className='flex gap-6 justify-center items-center text-center flex-col min-h-[80vh] bg-slate-500'>
+            (  <div className='flex gap-6 justify-center items-center text-center flex-col space min-h-[80vh] '>
                     <div className=''>
                         <p className='text text-2xl font-bold'>Welcome to N.T.S.M</p>
                     </div>

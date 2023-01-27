@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ButtonA, LoginButton, LogoutButton } from '../commun/button'
+import { LoginButton } from '../commun/button'
 import { Humburger } from '../commun/humburger'
 import { Logo } from '../commun/logo'
 import './navbar.css'
@@ -30,22 +30,28 @@ const Navbar = () => {
             }
       </nav>
       <nav className='md:hidden flex justify-between px-10 overflow-x-hidden'> 
-          <Logo/>
+           <Logo/>
             <ul className={`flex bg-slate-600 top-0 h-screen inset-x-0 transition-all fixed  z-50 duration-500 flex-col  justify-center items-start ${menu?'translate-x-[0px]':'translate-x-[100%] '}`}>
                 <li className='text-[25px] text-purple font-semibold hover:bg-pinky cursor-pointer py-10 w-full pl-10'><a href='/'>Home</a></li>
                 <li className='text-[25px] font-semibold text-purple hover:bg-pinky cursor-pointer py-10 w-full pl-10'><a>About</a></li>
                 <li className='text-[25px] font-semibold text-purple hover:bg-pinky cursor-pointer py-10 w-full pl-10'><a href='/books'>Read</a></li>
                 <li className='text-[25px] font-semibold text-purple hover:bg-pinky cursor-pointer py-10 w-full pl-10'><a>Contact Us</a></li>
-                {(!isLoading && !user)&&(
-                  <LoginButton/>
+  
+                  {(!isLoading && !user)&&(
+                    <div className='pl-10 text-[25px]'>
+                      <LoginButton/>
+                    </div>
                   )
-                }
-                {(!isLoading && user)&&(
-                  <LogoutButton/>
-                  )
-                }
+                  }
+                  {(!isLoading && user)&&(
+                      <div className='absolute top-2 right-16'>
+                        <Profile/>
+                      </div>
+                    )
+                  }
+                
             </ul>
-          <Humburger setMenu={setMenu} menu={menu}/>
+              <Humburger setMenu={setMenu} menu={menu}/>
       </nav>
     </div>
   )

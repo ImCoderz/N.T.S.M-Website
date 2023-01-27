@@ -8,9 +8,13 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    webkit-scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
 
 span{
     color: #6A82FB;
+}
+.bg{
+    transform: perspective(800px);
 }

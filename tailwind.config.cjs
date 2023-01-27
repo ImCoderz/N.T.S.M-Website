@@ -29,7 +29,7 @@ module.exports = {
           "textbook":"#847655",
       },
       screens:{
-        md:"800px",
+        md:"966px",
 
       },
       animation: {
