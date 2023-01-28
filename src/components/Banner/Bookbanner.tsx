@@ -15,7 +15,7 @@ const Banner = () => {
                 Read A Book
             </button>
         </div>
-        <div>
+        <div className='md:flex hidden'>
             <Bookanimation/>
         </div>
     </div>

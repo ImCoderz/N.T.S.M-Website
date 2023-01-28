@@ -1,15 +1,15 @@
 
 @layer btn{
 .utilitie{
-    @apply hidden md:flex
+    @apply hidden md:flex transition-all duration-300 
 }
 .utilitie:hover{
-@apply text-white bg-[#6A82FB] boxshadow
+@apply  bg-[#6A82FB] boxshadow transition-all duration-300 
 }
 .boxshadow{
 box-shadow:0 0 5px #6A82FB,
-0 0 25px #6A82FB,
-0 0 50px #6A82FB,
-0 0 100px ;
+0 0 20px #6A82FB,
+0 0 0px #6A82FB,
+0 0 20px ;
 }
 }

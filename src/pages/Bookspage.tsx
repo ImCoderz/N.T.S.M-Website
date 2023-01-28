@@ -1,33 +1,25 @@
 import { Navbar } from '../components/Navbar'
 import Bookswip from '../components/Swipper/Bookswip/Bookswip'
-import { useAtom,useAtomValue } from 'jotai'
-import { searchAtom,allBooks} from '../store'
-import { JSXElementConstructor, ReactElement, ReactFragment, ReactPortal, useEffect } from 'react'
-
+import ReadRight from '../components/Book/Read/ReadRight'
+import ReadLeft from '../components/Book/Read/ReadLeft'
+import Search from '../components/Book/Search/Search'
 const Bookspage = () => {
-  const [search,setSearch]=useAtom(searchAtom)
-  setSearch('react')  
-  const books=useAtomValue(allBooks).docs
-  
-  // useEffect(() => {
-  //   fetch("http://openlibrary.org/search.json?q=react")
-  //   .then(res=>console.log(res.json()))
-  //   .catch(err=>console.log(err));
-  // },[])
-  
-  
-  
+
   return (
-    <div className='px-20 bg-[#B6B5C6] min-h-screen flex absolute  flex-col gap-12'>
+    <div className=' bg-[#B6B5C6] h-[100vh] w-screen flex flex-col'>
         <Navbar/>
         <div className=''>
           <Bookswip/>
         </div>
-        {
-          // books.map((book: {book:string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined })=>(
-          //  // <h1>{book.title}</h1>
-          // ))
-        }
+        <Search/>
+      <div className='flex h-30'>
+        <div className='w-[70%]'>
+        
+        <ReadRight/>
+        </div>
+        <ReadLeft/>
+      </div>
+
     </div>
   )
 }
